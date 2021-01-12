@@ -2,10 +2,10 @@
 
   (general
     (thickness 1.6)
-    (drawings 791)
+    (drawings 790)
     (tracks 0)
     (zones 0)
-    (modules 10)
+    (modules 9)
     (nets 2)
   )
 
@@ -101,25 +101,6 @@
     (uvia_dia 0.3)
     (uvia_drill 0.1)
     (add_net GND)
-  )
-
-  (module "custom footprints:3mm_mounting_hole_LED" (layer F.Cu) (tedit 5FFBE292) (tstamp 5FFC4ED8)
-    (at 30 56.5)
-    (descr "Through hole straight socket strip, 1x01, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
-    (tags "Through hole socket strip THT 1x01 2.54mm single row")
-    (fp_text reference REF** (at 0 -2.77) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value 3mm_mounting_hole_LED (at 0 2.77) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 3.1 3.1) (drill 3) (layers *.Cu *.Mask)
-      (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x01_P2.54mm_Vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module "custom footprints:6mm_mounting_hole_thonkiconn" (layer F.Cu) (tedit 5FF4E2DD) (tstamp 5FFC4E56)
@@ -1145,7 +1126,6 @@
   (gr_text "OUT 1" (at 5 91.6) (layer F.SilkS) (tstamp 5FFC4EFF)
     (effects (font (size 2 2) (thickness 0.2)))
   )
-  (gr_circle (center 30 56.5) (end 32 56.5) (layer F.Mask) (width 1))
   (gr_line (start 35.2 98.8) (end 5.2 98.8) (layer F.Mask) (width 2))
   (gr_circle (center 35.2 98.7) (end 38.7 98.7) (layer B.Mask) (width 1) (tstamp 5FFC4E5A))
   (gr_circle (center 5.2 83.2) (end 8.7 83.2) (layer B.Mask) (width 1) (tstamp 5FFC4E23))
